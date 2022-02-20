@@ -1,0 +1,34 @@
+@import "./variables.scss";
+
+.weather__info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.weather__info__svg {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+  border-radius: 50%;
+}
+.weather__info__svg,
+.weather__info__name {
+  margin-right: 20px;
+}
+.weather__info__name,
+.weather__info__value {
+  font-size: 14px;
+}
+.weather__info__name {
+  color: $base-color;
+}
+.weather__info__value {
+  color: var(#{--text-color-default});
+}

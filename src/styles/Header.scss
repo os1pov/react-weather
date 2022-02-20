@@ -1,0 +1,29 @@
+@import "./variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  color: var(#{--text-color-default});
+}
+.header__logo,
+.header__change_theme {
+  margin-right: 20px;
+}
+.header__logo {
+  svg {
+    width: 65px;
+    height: 65px;
+  }
+}

@@ -1,0 +1,42 @@
+@import "./variables";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(#{--card-background-default});
+  border-radius: 10px;
+  padding: 10px;
+  width: 149px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  .card__weekday {
+    margin-bottom: 7px;
+    font-size: 18px;
+    color: var(#{--text-color-default});
+  }
+
+  .card__date {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: $base-color;
+  }
+
+  .card__svg {
+    margin-bottom: 12px;
+  }
+
+  .card__temp {
+    font-size: 18px;
+    color: var(#{--text-color-default});
+  }
+
+  .card__weather_info {
+    font-size: 13px;
+    color: $base-color;
+  }
+
+  &:hover {
+    box-shadow: var(#{--card-shadow-default});
+  }
+}
